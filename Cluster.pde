@@ -17,7 +17,6 @@ public class Cluster
         Tendril f = new Tendril(len, Math.random()*6*(2*PI)-5*(2*PI), x, y);
         f.show();
         Tendril g = new Tendril(len, Math.random()*7*(2*PI)-6*(2*PI), x, y);
-        g.show();
-       
+        g.show();       
     }
 }
