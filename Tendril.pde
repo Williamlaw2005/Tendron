@@ -34,7 +34,7 @@ class Tendril
        line((float)startX,(float)startY,(float)endX,(float)endY);
        startX = endX;
        startY = endY;
-  if(i == myNumSegments-1){
+  if(i == myNumSegments-2){
      Cluster bh = new Cluster(myNumSegments/2,(int)endX,(int)endY);
       }
     }
