@@ -1,6 +1,5 @@
 public void setup()
 {
-  frameRate(60);
   size(1000, 1000);  
   background(255);
   noLoop();
