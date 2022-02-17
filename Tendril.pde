@@ -25,11 +25,12 @@ class Tendril
        double endX = startX + Math.cos(myAngle)*SEG_LENGTH;
        double endY = startY + Math.sin(myAngle)*SEG_LENGTH;
        
- if(myNumSegments > 5)
+ if(myNumSegments > 5){
    stroke(255);
-  else
+ }
+  else{
    stroke(0,255,255);
-     
+  }
        line((float)startX,(float)startY,(float)endX,(float)endY);
        startX = endX;
        startY = endY;
