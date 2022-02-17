@@ -24,19 +24,18 @@ class Tendril
        myAngle += (double)(Math.random()*0.4)-0.2;
        double endX = startX + Math.cos(myAngle)*SEG_LENGTH;
        double endY = startY + Math.sin(myAngle)*SEG_LENGTH;
-       
  if(myNumSegments > 5){
    stroke(255);
  }
-  else{
-   stroke(0,255,255);
-  }
-       line((float)startX,(float)startY,(float)endX,(float)endY);
-       startX = endX;
-       startY = endY;
-  if(i == myNumSegments-1){
-     Cluster bh = new Cluster(myNumSegments/4,(int)endX,(int)endY);
-      }
+ else{
+  stroke(0,255,255);
+ }
+ line((float)startX,(float)startY,(float)endX,(float)endY)
+ startX = endX;
+ startY = endY;
+ if(i == myNumSegments-1){
+    Cluster bh = new Cluster(myNumSegments/4,(int)endX,(int)endY);
     }
+   }
   }
-}
+ }
