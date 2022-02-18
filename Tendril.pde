@@ -26,7 +26,7 @@ class Tendril
        endX = startX + Math.cos(myAngle)*SEG_LENGTH;
        endY = startY + Math.sin(myAngle)*SEG_LENGTH;
        
- if(myNumSegments > 5){
+ if(myNumSegments > 10){
    stroke(255);
  }
   else{
@@ -35,8 +35,8 @@ class Tendril
        line((float)startX,(float)startY,(float)endX,(float)endY);
        startX = endX;
        startY = endY;
-  if(i == myNumSegments-1){
-     Cluster bh = new Cluster(myNumSegments/2,(int)endX,(int)endY);
+  if(myNumSegments > 10){
+     Cluster bh = new Cluster(myNumSegments/4,(int)endX,(int)endY);
       }
     }
   }
