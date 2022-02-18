@@ -1,9 +1,9 @@
 class Tendril
 {
   public final static int SEG_LENGTH = 4; //length of each segment in the tendril
-  private int myNumSegments, myX, myY;
-  private double startX, startY, endX, endY;
-  private double myAngle;
+  public int myNumSegments, myX, myY;
+  public double startX, startY, endX, endY;
+  public double myAngle;
   
   /**
    Class constructor
